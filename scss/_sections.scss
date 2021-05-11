@@ -1,0 +1,207 @@
+/***---------SECCION 1---------***/
+.Seccion1__row{
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1516638022313-53fa45a84c7f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+  
+
+/***---------SECCION 2---------***/
+.Seccion2__row{
+  padding: 5% 10%;
+  display: flex;
+}
+  .Seccion2__row__column1{
+    padding: 2em 1em;
+    text-align: center;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+  }
+ 
+    .Seccion2__row__column1--img{
+      border-radius: 2px;
+      width: 30vw;
+      margin: 2%;
+    }
+    .Seccion2__row__column1--img:hover {
+      opacity: 0.8;
+      filter: grayscale(0.1);
+    }
+
+  .Seccion2__row__column2{
+    padding: 2em 1em;
+    text-align: center;
+    width: calc(50% - 10px);
+  }
+
+  /*Media queries*/
+  @media screen and (max-width: 1000px){
+  .Seccion2__row {
+    padding: 5% 10%;
+    flex-direction: column;
+  }
+  .Seccion2__row__column1,
+  .Seccion2__row__column2{
+      width: 100%;
+    }
+  .Seccion2__row__column1--img{
+    width: 95%;
+    margin: 2%;
+  }
+  }
+  
+  
+
+/***---------SECCION 3---------***/
+#Seccion3 {
+  text-align: center;
+  background-color: #b8c6db;
+  background-image: linear-gradient(90deg, #b8c6db 0%, #f5f7fa 74%);
+  padding: 5%;
+
+}
+  .Seccion3__row{
+    width: 100%;
+  }
+    .Seccion3__row--Frase {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 2rem;
+      margin-bottom: 0;
+    }
+    
+    .Seccion3__row--Autor{
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  
+  
+  
+/***---------SECCION 4---------***/
+#Seccion4 {
+  padding: 5% 15%;
+  display: flex;
+}
+  .Seccion4__column1{
+    padding: 3em 1em;
+    text-align: center;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+  }
+    .Seccion4__column1--titulo{
+      padding-top: 4.5rem;
+    }
+
+  .Seccion4__column2{
+    padding: 3em 1em;
+    text-align: center;
+    width: calc(50% - 10px);
+  }
+    .Seccion4__column2--gif {
+      width: 250px;
+      animation: animaWidth 3s infinite ease alternate;	
+    }
+        @keyframes animaWidth{
+            from{
+            opacity: 0;
+            filter: saturate(1);
+          }
+            to{
+            opacity: 1;
+            filter: saturate(4);
+        
+          }
+        }
+  
+  /*Media queries*/
+  @media screen and (max-width: 1000px){
+    #Seccion4 {
+    padding: 5% 10%;
+    flex-direction: column;
+    }
+    .Seccion4__column1,
+    .Seccion4__column2{
+      width: 100%;
+    }
+  }
+  
+
+
+
+/***---------SECCION 5---------***/
+#Seccion5 {
+  padding: 3% 12%;
+  display: flex;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+  
+  .Seccion5__column1{
+    padding: 3em 1em;
+    text-align: center;
+    width: calc(30% - 20px);
+  }
+    .Seccion5__column1--img{
+      width: 86%;
+    }
+  
+  .Seccion5__column2{
+    padding: 3em 1em;
+    text-align: center;
+    width:70%;
+  }
+  
+  /*Media queries*/
+  @media screen and (max-width: 1000px){
+  #Seccion5 {
+    padding: 3% 12%;
+    flex-direction: column;
+  }
+    .Seccion5__column1,
+    .Seccion5__column2{
+      width: 100%;
+    }
+    .Seccion5__column1--img{
+      width: 200px;
+    }
+  }
+  
+  
+  
+/***---------SECCION 6---------***/
+#Seccion6 {
+  padding: 5% 20% 8%;
+  display: flex;
+  text-align: center;
+}
+  
+  .Seccion6__columna{
+    width: 33.3333%;
+  }
+  .Seccion6__columna--icono{
+    font-size: 40px;
+    padding: 5%;
+    color: rgb(62, 157, 201);
+  }
+  .Seccion6__columna--icono:hover{
+    font-size: 50px;
+    transform: rotate(5deg);
+    padding: 5%;
+    color: rgb(104, 211, 206);
+  }
+
+  /*Media queries*/
+  @media screen and (max-width: 1000px){
+    #Seccion6 {
+      padding: 5% 20%;
+      flex-direction: column;
+    }
+    .Seccion6__columna{
+        width: 100%;
+        padding: 5%;
+      }
+    }

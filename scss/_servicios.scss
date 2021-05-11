@@ -1,0 +1,22 @@
+  /* CAROUSEL */
+
+
+  .img-servicios{
+    width: 400px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  @media (max-width: 900px) {
+    .img-servicios{
+      width: 200px;
+      border-radius: 50%;
+    }
+  }
+  
+  
+  /*----Footer----*/
+  footer {
+    background-color: rgb(252, 252, 252);
+    padding: 10px 7px;
+    text-align: center;
+  }
